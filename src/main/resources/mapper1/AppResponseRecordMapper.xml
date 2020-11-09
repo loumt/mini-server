@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.keesondata.device.dao1.IAppResponseRecordDao">
+
+    <resultMap id="appResponseRecordMap" type="com.keesondata.device.model.AppResponseRecord">
+        <id column="id" property="id"/>
+        <result property="responseId" column="response_id" />
+        <result property="processId" column="process_id" />
+        <result property="remark" column="remark" />
+        <result property="creator" column="creator" />
+        <result property="createDate" column="createDate"/>
+    </resultMap>
+
+    <select id="selectAll" resultMap="appResponseRecordMap">
+    	select * from tb_app_response_record;
+    </select>
+
+    <select id="findAppResponseRecordById" resultMap="appResponseRecordMap">
+    	select * from tb_app_response_record where id = #{id};
+    </select>
+
+</mapper>
