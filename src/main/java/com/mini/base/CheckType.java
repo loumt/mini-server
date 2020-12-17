@@ -18,6 +18,7 @@ public enum CheckType implements BaseCodeEnum {
         this.code = code;
     }
 
+    @Override
     public int getCode() {
         return this.code;
     }

@@ -28,8 +28,6 @@ public class DataBaseConfig
     @Value("${db.driver}")
     private String jdbcDriver;
 
-    // =============================================�����ݿ������=============================================//
-
     @Value("${db1.url}")
     private String db1Url;
 

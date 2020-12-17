@@ -18,6 +18,7 @@ public enum DeleteFlag implements BaseCodeEnum {
         this.code = code;
     }
 
+    @Override
     public int getCode() {
         return this.code;
     }
